@@ -1,2 +1,2 @@
 //notLogic
-db.listingsAndReviews.find({$not: [{amenities: "Wifi"}, {amenities: "TV"}]}); 
+db.listingsAndReviews.find({ amenities: { $not: { $in: ["Wifi", "TV"] } } });

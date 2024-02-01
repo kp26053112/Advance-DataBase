@@ -1,2 +1,3 @@
 // lesserThanEqualTo query
-db.grades.find({ "products.score": { $lt: 59  } })
+db.grades.find({ "products.score": { $lte: 59 } })
+
