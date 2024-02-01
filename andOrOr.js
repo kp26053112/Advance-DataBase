@@ -1,7 +1,7 @@
 //andOrOrLogic
-db.routes.find({
+db.listingsAndReviews.find({
   $and: [
-    {$or: [{dst_airport: "SEA"}, {src_airport: "SEA"}]},
-    {$or: [{"airline.name": "American Airlines"}, {airplane: 320}]},
+    {$or: [{amenities: "Wifi"}, {amenities: "TV"}]},
+    {$or: [{amenities: "Kitchen"}, {amenities: "Heating"}]},
   ],
 });
