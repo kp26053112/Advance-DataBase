@@ -1,3 +1,4 @@
+//Drop Index
 db.books.dropIndex({key: {ISBN: 1617292575}},
 {
 			"createdCollectionAutomatically": false,

@@ -1,3 +1,4 @@
+//Data for Geospatial Index
 db.pois.insertMany([
   {
     name: "Central Park",

@@ -1,3 +1,4 @@
+//Compound Index
 db.student.createIndex({ student_id: 1, score: 1 },
 {
 			"createdCollectionAutomatically": false,
