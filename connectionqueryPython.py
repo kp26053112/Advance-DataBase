@@ -14,3 +14,4 @@ try:
         print(db_name)*/''' #once sucessfully established connection
 except Exception as e:
     print(e)
+    
