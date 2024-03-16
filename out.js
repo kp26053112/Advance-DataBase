@@ -10,7 +10,4 @@ db.zips.aggregate([{
 },
 {
     $out:"small_states"
-}])
-#to show all the collections
-
-show collections;
+}]);

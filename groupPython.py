@@ -2,6 +2,7 @@ from pymongo.mongo_client import MongoClient
 from pymongo.server_api import ServerApi
 import datetime
 
+
 uri = "mongodb+srv://kjyp2605:admin123@cluster0.s4ul6fm.mongodb.net"
 # Create a new client and connect to the server
 client = MongoClient(uri, server_api=ServerApi('1'))

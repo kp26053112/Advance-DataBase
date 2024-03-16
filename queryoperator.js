@@ -1,12 +1,12 @@
-# logic and query
+#logicandquery
 db.restaurants.find({$and: [{cuisine: "Jewish"}, {cuisine: "Hamburgers"}]}); 
-# logic or query
+#logicorquery
 db.restaurants.find({$or: [{borough: "Manhattan"}, {borough: "Brooklyn"}]});
-# logic nor query
+#logicnorquery
 db.restaurants.find({ $nor: [{cuisine: "Bakery"},{cuisine: "American"}]})
-# logic not query
+#logicnotquery
 db.grades.find({class_id:{$not:{$gt:460}}})
-# insertOne query
+#insertOnequery
 db.listingsAndReviews.insertOne({
   student_id: 123456,
   products: [
@@ -16,11 +16,12 @@ db.listingsAndReviews.insertOne({
   ],
   class_id: 550,
 });
->>{
+
+#output{
   acknowledged: true,
-  insertedId: ObjectId('65ba7df3f1d84eeb1df5ea49')
+  #insertedId: ObjectId('65ba7df3f1d84eeb1df5ea49')
 }
-# insertMany query
+#insertManyquery
 db.restaurants.insertMany([
   {
     restaurant_id: 987655,
@@ -54,7 +55,7 @@ db.restaurants.insertMany([
   },
  
 ]);
->>{
+#output{
   acknowledged: true,
   insertedIds: {
     '0': ObjectId('65bb258082d409d7f2efeece'),
@@ -62,29 +63,12 @@ db.restaurants.insertMany([
   }
 }
 
-# greaterthan
+#greaterthan
 db.grades.find({ "products.score": { $lt: 59  } })
-# lessthan
+#lessthan
 db.grades.find({ "products.score": { $lt: 59  } })
-# GREATERTHAN EQUAL TO
+#GREATERTHANEQUALTO
 db.zips.find({ "pop": { $lte: 1500  } })
-# Lessthan Equal to
+#LessthanEqualto
 db.zips.find({ "pop": { $lte: 1500  } })
-# MongoDBPYTHON
-from pymongo.mongo_client import MongoClient
-from pymongo.server_api import ServerApi
-
-uri = "mongodb+srv://chandrikaguntupalli2:chandu99@cluster0.trp076i.mongodb.net/"
-# Create a new client and connect to the server
-client = MongoClient(uri, server_api=ServerApi('1'))
-
-# Send a ping to confirm a successful connection
-try:
-    client.admin.command('ping')
-    print("Pinged your deployment. You successfully connected to MongoDB!")
-    '''for db_name in client.list_database_names():
-        print(db_name)*/''' #once sucessfully established connection
-except Exception as e:
-    print(e)
-
 
