@@ -1,3 +1,4 @@
+
 // creating a text index on the title field
 db.products.createIndex({ title: "text" })
 db.products.getIndexes()

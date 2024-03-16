@@ -1,3 +1,4 @@
+
 //// creating a hash index 
 db.products.createIndex( { _id: "hashed" } )
 //
