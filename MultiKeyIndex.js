@@ -1,3 +1,4 @@
+
 db.student.createIndex({student:1},
 {
 			"createdCollectionAutomatically": false,
