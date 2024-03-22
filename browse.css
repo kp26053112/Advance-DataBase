@@ -1,0 +1,33 @@
+/* Styles specific to the browse listings page */
+#searchSection {
+  margin-bottom: 20px;
+}
+
+#listingsContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 20px;
+}
+
+.listing {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.listing img {
+  max-width: 100%;
+  height: auto;
+}
+
+.listing button {
+  margin-top: 10px;
+  padding: 5px 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.listing button:hover {
+  background-color: #555;
+}

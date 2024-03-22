@@ -1,0 +1,15 @@
+/* Styles specific to the my account page */
+#profileSection,
+#listingsSection,
+#transactionsSection,
+#messagesSection {
+  margin-bottom: 20px;
+}
+
+.listing,
+.transaction,
+.message {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+}

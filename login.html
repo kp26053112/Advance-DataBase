@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login/Register - Campus Marketplace</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>SHU Campus Marketplace</h1>
+        <nav>
+          <ul>
+            <li><a href="index.html" id="homeLink">Home</a></li>
+            <li><a href="login.html" id="loginLink">Login/Register</a></li>
+            <li><a href="browse.html" id="browseLink">Browse Listings</a></li>
+            <li><a href="sell.html" id="sellLink">Sell Your Items</a></li>
+            <li><a href="messages.html" id="messagesLink">Messages</a></li>
+            <li><a href="account.html" id="accountLink">My Account</a></li>
+          </ul>
+        </nav>
+      </header>
+     
+  <main>
+    <section id="loginSection">
+      <h2>Login</h2>
+      <form id="loginForm">
+        <input type="email" id="email" placeholder="Email" required><br>
+        <input type="password" id="password" placeholder="Password" required><br>
+        <button type="submit">Login</button>
+      </form>
+    </section>
+<hr>
+<p>OR</p>
+<hr>
+    <section id="registerSection">
+      <h2>Register</h2>
+      <form id="registerForm">
+        <input type="text" id="username" placeholder="Username" required>
+        <input type="email" id="regEmail" placeholder="Email" required>
+        <input type="password" id="regPassword" placeholder="Password" required>
+        <button type="submit">Register</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Campus Marketplace. All rights reserved.</p>
+  </footer>
+
+  <script src="login.js"></script>
+</body>
+</html>

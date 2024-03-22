@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sell - Campus Marketplace</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>SHU Campus Marketplace</h1>
+        <nav>
+          <ul>
+            <li><a href="index.html" id="homeLink">Home</a></li>
+            <li><a href="login.html" id="loginLink">Login/Register</a></li>
+            <li><a href="browse.html" id="browseLink">Browse Listings</a></li>
+            <li><a href="sell.html" id="sellLink">Sell Your Items</a></li>
+            <li><a href="messages.html" id="messagesLink">Messages</a></li>
+            <li><a href="account.html" id="accountLink">My Account</a></li>
+          </ul>
+        </nav>
+      </header>
+    
+  <main>
+    <section id="sellFormSection">
+      <h2>Sell Your Item</h2>
+      <table align="center"  cellspacing="5px">
+      <form id="sellForm">
+        <input type="text" id="itemName" placeholder="Item Name" required><br>
+        <textarea id="itemDescription" placeholder="Item Description" required></textarea><br>
+        <input type="number" id="itemPrice" placeholder="Item Price" required><br>
+        <input type="file" id="itemImage" accept="image/*" required><br>
+        <button type="submit">Submit Listing</button>
+      </form>
+    </table>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Campus Marketplace. All rights reserved.</p>
+  </footer>
+
+  <script src="sell.js"></script>
+</body>
+</html>

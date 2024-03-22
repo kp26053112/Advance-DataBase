@@ -1,0 +1,23 @@
+/* Styles specific to the sell items page */
+#sellFormSection {
+  margin-bottom: 20px;
+}
+
+#sellForm input,
+#sellForm textarea {
+  width: 100%;
+  padding: 0px;
+  margin-bottom: 0px;
+}
+
+#sellForm button {
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+#sellForm button:hover {
+  background-color: #555;
+}
