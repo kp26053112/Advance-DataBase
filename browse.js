@@ -5,7 +5,7 @@ const listingsData = [
   { id: 3, title: 'Laptop - MacBook Pro', price: 899.99, image: 'macbook-pro.jpg' },
   // Add more listings as needed
 ];
-
+//small change
 // Function to populate listings dynamically
 function populateListings() {
   const listingsContainer = document.getElementById('listingsContainer');
